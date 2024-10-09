@@ -1,0 +1,29 @@
+.stat{
+    background-color: wheat;
+    width:600px;
+    height: 500px;
+    border-radius: 50px;
+    border-style:solid ;
+    border-color:blue;
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+
+.chart{
+   padding-left: 50px;
+}
+.date{
+    margin-top: 30px;
+    padding-left:50px ;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement si nécessaire */
+    margin-top: 10px; /* Ajoute un espacement au-dessus du bouton */
+    padding-right: 60px;
+  }
+  
+ 

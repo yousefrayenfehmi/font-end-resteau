@@ -1,0 +1,100 @@
+/* Container for the menu page */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh; /* Use min-height instead of height to allow content to expand */
+  margin-top: 50px;
+}
+
+/* Container for the menu items */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if there are more than 3 cards */
+  gap: 16px; /* Adds space between cards */
+}
+
+/* Background for the whole menu */
+#menu {
+  background-image: url('./img/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%; /* Use min-height to allow for content expansion */
+  width: 100%;
+  padding: 20px; /* Add padding to ensure content doesn't touch edges */
+  box-sizing: border-box; /* Ensures padding does not affect width calculation */
+}
+
+/* Styling for each menu card */
+.menu-card {
+  background-color: rgba(10, 10, 10, 0.712); /* Card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(58, 54, 54, 0.1);
+  width: 100%; /* Ensure full width within the flex container */
+  color: #333;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Ensure it is stacked properly */
+  z-index: 1; /* Ensure it is above other elements */
+}
+
+/* Hover effect for the menu card */
+.menu-card:hover {
+  box-shadow: 0 8px 12px rgba(110, 107, 107, 0.8);
+}
+
+/* Styling for the category name */
+.menu-card h2 {
+  background-color: rgba(0, 0, 0, 0.336); /* Title background color */
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative; /* Ensure it is above menu details */
+  z-index: 2; /* Keep above the menu details */
+}
+
+/* Container for menu details */
+.menu-details {
+  background-color: rgba(0, 0, 0, 0.005); /* Body background color */
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  color: white;
+  display: block; /* Ensure it's displayed correctly */
+  width: 100%;
+}
+
+/* Styling for the list in the menu details */
+.menu-details ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; /* Remove default margin */
+}
+
+/* Styling for list items */
+.menu-details ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgb(110, 107, 107);
+}
+
+/* Hover effect for list items */
+.menu-details ul li:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for very small screens */
+@media (max-width: 400px) {
+  .menu-card {
+    width: 95%; /* Adjust width for small screens */
+    padding: 10px;
+  }
+
+  .menu-page {
+    padding: 10px;
+  }
+}

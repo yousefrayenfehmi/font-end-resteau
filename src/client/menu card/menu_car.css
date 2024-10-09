@@ -1,0 +1,92 @@
+.card {
+  width: 250px;
+  height: 300px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-image: url('../img/pp.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: white; /* Texte en blanc pour contraster avec l'image */
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+  
+}
+
+
+
+
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay sombre pour rendre le texte lisible */
+  padding: 20px;
+  backface-visibility: hidden; /* Prevent the back side from showing through */
+  transition: opacity 0.3s ease;
+  visibility:visible;
+}
+
+.card-title {
+  color: wheat;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 15px;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.card-content-back {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: opacity 0.3s ease;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.add-to-cart-button {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-top: 10px; /* Espace au-dessus du bouton */
+  align-self: center;
+  transform: rotateY(180deg);
+
+}
+
+.add-to-cart-button:hover {
+  background-color: #d35400;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title-back {
+ color: white;
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped .card-back {
+  display: flex;
+}

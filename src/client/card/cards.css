@@ -1,0 +1,8 @@
+.cards-container{background-image: url('/img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Assure que l'image couvre au moins toute la hauteur de la fenêtre */
+    width: 100%;
+    padding: 20px; /* Pour éviter que le contenu ne touche les bords */
+    box-sizing: border-box; /* Assure que le padding ne change pas la largeur totale */}
